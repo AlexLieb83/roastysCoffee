@@ -7,6 +7,10 @@
   --bs-body-font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Links */
 a {
   color: var(--primary-color);
@@ -138,5 +142,35 @@ a:hover {
   }
   to {
     transform: translateY(-10px);
+  }
+}
+
+/* Parts Section */
+.parts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.parts-section-image {
+  height: 240px;
+  object-fit: cover;
+}
+
+.parts-content-width {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.parts-bg {
+  background-color: #fcf9de;
+}
+
+@media (min-width: 544px) {
+  .parts {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .parts-section-image {
+    height: auto;
   }
 }
